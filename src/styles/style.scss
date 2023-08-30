@@ -1,3 +1,245 @@
+$color_1: #ebebeb;
+$color_2: #333351;
+$font-family_1: "Mulish", "Corben", sans-serif;
+$font-family_2: "Mulish";
+$font-family_3: "Muslish", serif;
+$font-family_4: "Corben", serif;
+$background-color_1: #252530;
+$background-color_2: rgb(250, 146, 9);
+$background-color_3: rgb(13, 176, 13);
+$background-color_4: rgb(169, 19, 169);
+$background-color_5: rgb(19, 119, 219);
+$background-color_6: rgb(255, 132, 0);
+$background-color_7: white;
+$background-color_8: #f8c84e;
+
+/* my styles */
+/* #1 section */
+/* Different background colors for each image */
+/* second screen */
+html {
+	font-size: 62.5%;
+	font-family: $font-family_1;
+}
 body {
-  background-color: #252530;
+	background-color: $background-color_1;
+	color: $color_1;
+	margin: 2rem auto;
+	max-width: 1440px;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	max-width: 1240px;
+}
+.logo {
+	flex: 1;
+	max-width: 30%;
+	cursor: pointer;
+}
+.menu {
+	>* {
+		display: flex;
+		flex: 2;
+		gap: 2rem;
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+}
+.menuitem {
+	a {
+		text-decoration: none;
+		color: $color_1;
+		&:hover {
+			color: $color_1;
+			border-bottom: 2px solid #ffb469;
+		}
+	}
+}
+.fa-solid {
+	color: $color_1;
+}
+.first-screen-cards {
+	display: flex;
+	margin-top: 5rem;
+	margin-left: 1rem;
+	gap: 0.6rem;
+	max-width: 1440px;
+}
+.left-side {
+	flex: 1;
+	position: relative;
+	img {
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		border-radius: 2rem;
+		cursor: pointer;
+	}
+}
+.right-side {
+	flex: 2;
+	display: flex;
+	flex-wrap: wrap;
+}
+.image-box {
+	width: 48%;
+	margin: 0.5rem;
+	position: relative;
+	img {
+		width: 100%;
+		height: 190px;
+		object-fit: cover;
+		border-radius: 2rem;
+		cursor: pointer;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 2rem;
+		background-color: $background-color_2;
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	&:nth-child(1) {
+		&::before {
+			background-color: $background-color_3;
+		}
+	}
+	&:nth-child(2) {
+		&::before {
+			background-color: $background-color_4;
+		}
+	}
+	&:nth-child(3) {
+		&::before {
+			background-color: $background-color_5;
+		}
+	}
+	&:nth-child(4) {
+		&::before {
+			background-color: $background-color_6;
+		}
+	}
+}
+.bold-text-left {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2rem;
+	color: $color_1;
+	font-weight: 800;
+	font-size: 3rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	border-radius: 0 0 2rem 2rem;
+	line-height: 1.2;
+	width: 80%;
+	box-sizing: border-box;
+}
+.bold-text {
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	padding: 1rem;
+	color: $color_1;
+	font-weight: 800;
+	font-size: 2.2rem;
+	font-family: $font-family_2;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	border-radius: 0 0 2rem 2rem;
+	line-height: 1.2;
+	width: 100%;
+}
+.second-screen-cards {
+	margin: auto;
+	max-width: 1240px;
+}
+.screen-cards {
+	position: relative;
+	img {
+		height: 600px;
+		width: 100%;
+		object-fit: cover;
+		margin-top: 2rem;
+		border-radius: 2rem;
+		opacity: 0.6;
+	}
+}
+.btns {
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	a {
+		text-decoration: none;
+		color: $color_1;
+		border: 1px solid #ebebeb;
+		border-radius: 1rem;
+		padding: 0.2rem 1rem;
+		margin-right: 1rem;
+		font-family: $font-family_3;
+		font-size: 1.2rem;
+		&:hover {
+			background-color: $background-color_7;
+			color: $color_2;
+			border: none;
+			transition: 1s ease;
+		}
+	}
+}
+.width-card-text {
+	font-size: 4rem;
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	color: $color_1;
+	width: 80%;
+	font-family: $font-family_4;
+	font-weight: 600;
+	line-height: 1.6;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.add-text {
+	position: absolute;
+	top: 55%;
+	left: 10%;
+	font-size: 2rem;
+	width: 60%;
+	line-height: 150%;
+	color: $color_1;
+}
+.by-text {
+	position: absolute;
+	top: 70%;
+	left: 10%;
+	font-size: 1.4rem;
+	width: 60%;
+	line-height: 150%;
+	color: $color_1;
+}
+.yellow {
+	&::before {
+		content: "";
+		position: absolute;
+		top: 3%;
+		left: 0;
+		width: 100%;
+		height: 600px;
+		border-radius: 2rem;
+		background-color: $background-color_8;
+		opacity: 0.9;
+		cursor: pointer;
+	}
+}
+.line {
+	position: absolute;
+	top: 53%;
+	left: 10%;
+	width: 3%;
+	border: 1px solid #333351;
 }
