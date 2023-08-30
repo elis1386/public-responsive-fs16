@@ -1,4 +1,4 @@
-.vscode/
-.DS_Store/
-node-modules/
+.vscode
+.DS_Store
+node-modules
 package-lock.json
