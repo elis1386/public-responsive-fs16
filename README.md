@@ -1,19 +1,27 @@
-# Responsive design
+# Project: Dark Version Implementation of Main Page
+In this project, I implemented a dark version of the main page using the Maido Multipurpose Ghost Blog Theme as a resource.
 
-Refer to this [link](https://preview.themeforest.net/item/maido-multipurpose-ghost-blog-theme/full_screen_preview/24837109?_ga=2.259990478.570486835.1654146705-2133876429.1654146705)(see 'Dark version') and create a similar webpage
+During the implementation, I utilized semantic tags to structure the content:
 
-## Requirements
+<header>: Used for the page header.
+<main>: Used as the main content area.
+<section>: Utilized to divide the content into sections.
+<article>: Employed for individual articles or pieces of content.
+<figure>: Used for embedding media content.
+<figcaption>: Utilized to provide a caption for the media within the <figure> tag.
+<footer>: Used for the page footer.
 
-1. Position the HTML elements using Flexbox and Grid system
-2. Implement basic animations as shown in the webpage (hover effect,
-active link styles, typing effect). You can modify the outlook of the effects
-3. Deploy your web page, using the platform of your choice (For example, Github Pages).
-4. This assignment requires the implementation of SASS.
-5. Rewrite README file with good structure. Add unnecessary files and folders to `.gitignore`
+In addition to semantic tags, I leveraged 
+ - Flexbox
+ - Flex Grid 
+for creating responsive layouts and aligning elements effectively.
 
-This assignment only requires 1 static page. No JavaScript needed.
-Font family and text content can be modified as your preferences.
-The web page does not need to be fully responsive, but at least you should
-have responsive scaling for Flexbox and Grid system.
+For styling the project, I followed these steps:
+
+# Initial Styling: 
+I began by applying CSS styles to the project to achieve a basic look and layout.
+
+# Transition to SCSS: 
+After the initial styling was complete, I transitioned from CSS to SCSS (Sass) to take advantage of its features like variables and mixins.
 
 

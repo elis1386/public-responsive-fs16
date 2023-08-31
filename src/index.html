@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Maido</title>
   </head>
   <body>
@@ -31,11 +31,11 @@
         <ul class="menu-items">
           <li class="menuitem"><a href="#">Home</a></li>
           <li class="menuitem"><a href="#">Feature</a></li>
-          <li class="menuitem"><a href="#">Style Guide</a></li>
+          <li class="menuitem"><a href="#">Style</a></li>
           <li class="menuitem"><a href="#">Contact</a></li>
           <li class="menuitem"><a href="#">Newsetter</a></li>
           <li class="menuitem"><a href="#">Demos</a></li>
-          <li class="menuitem"><a href="#">Get Theme</a></li>
+          <li class="menuitem"><a href="#">Theme</a></li>
           <i class="fas fa-search"></i>
         </ul>
       </nav>
@@ -47,33 +47,56 @@
           <figure class="left-image-box">
             <img src="./images/pic_1.jpeg" alt="Image number one" />
           </figure>
+          <div class="btn">
+            <a href="#">Pinned</a>
+          </div>
           <figcaption class="bold-text-left">
             One space, so many possibilities
           </figcaption>
         </article>
         <aside class="right-side">
-          <figure class="image-box">
-            <img src="./images/pic_2.jpeg" alt="Image number two" />
+          <article class="card-box">
+            <figure class="image-box">
+              <img src="./images/pic_2.jpeg" alt="Image number two" />
+            </figure>
+            <div class="btn">
+              <a href="#">Pinned</a>
+            </div>
             <figcaption class="bold-text">
               Make the open space, open more
             </figcaption>
-          </figure>
-          <figure class="image-box">
-            <img src="./images/pic_4.jpeg" alt="Image number three" />
-            <figcaption class="bold-text">
-              An open space for open mind
-            </figcaption>
-          </figure>
-          <figure class="image-box">
-            <img src="./images/pic_13.jpeg" alt="Image number four" />
+          </article>
+          <article class="card-box">
+            <figure class="image-box">
+              <img src="./images/pic_13.jpeg" alt="Image number four" />
+            </figure>
+            <div class="btn">
+              <a href="#">Pinned</a>
+            </div>
             <figcaption class="bold-text">
               A comfotable sport for everyone
             </figcaption>
-          </figure>
-          <figure class="image-box">
-            <img src="./images/pic_6.jpeg" alt="Image number five" />
+          </article>
+          <article class="card-box">
+            <figure class="image-box">
+              <img src="./images/pic_4.jpeg" alt="Image number three" />
+            </figure>
+            <div class="btn">
+              <a href="#">Pinned</a>
+            </div>
+            <figcaption class="bold-text">
+              An open space for open mind
+            </figcaption>
+          </article>
+          <article class="card-box">
+            <figure class="image-box">
+              <img src="./images/pic_6.jpeg" alt="Image number five" />
+            </figure>
+            <div class="btn">
+              <a href="#">Pinned</a>
+            </div>
             <figcaption class="bold-text">Anyone can hold the...</figcaption>
-          </figure>
+          </article>
         </aside>
       </section>
       <!-- section #2 with 3 cards -->
@@ -127,22 +150,98 @@
       </section>
 
       <!-- section #3 with -->
-      <section class="cards" id="cards"></section>
+      <section class="bellow-section-text">
+        <h3 role="text">YOU REALLY MUST SEE OUR EARLIER ARTICLES</h3>
+      </section>
+      <section class="grid">
+        <article class="item item-50_1">
+          <figure>
+            <img src="./images/pic_13.jpeg" alt="" />
+          </figure>
+          <div class="grid-dark-btns">
+            <a href="#">Case Study</a>
+            <a href="#">Open Space</a>
+          </div>
+          <figcaption class="grid-dark-text">
+            The perfect place that helps you get work done in peace
+          </figcaption>
+          <p class="grid-by-dark-text">by Margret Robertson</p>
+        </article>
+        <article class="item item-50_2">
+          <figure>
+            <img src="./images/pic_11.jpeg" alt="" />
+          </figure>
+          <div class="grid-dark-btns">
+            <a href="#">Case Study</a>
+            <a href="#">Open Space</a>
+          </div>
+          <figcaption class="grid-dark-text">
+            The perfect place that helps you get work done in peace
+          </figcaption>
+          <p class="grid-by-dark-text">by Margret Robertson</p>
+        </article>
+        <article class="item item-30_1">
+          <figure>
+            <img src="./images/pic_2.jpeg" alt="" />
+          </figure>
+          <div class="grid-btns">
+            <a href="#">Case Study</a>
+            <a href="#">Open Space</a>
+          </div>
+          <figcaption class="grid-card-text">
+            The perfect place that helps you get work done in peace
+          </figcaption>
+          <p class="grid-by-text">by Margret Robertson</p>
+        </article>
+        <article class="item item-30_2">
+          <figure>
+            <img src="./images/pic_4.jpeg" alt="" />
+          </figure>
+          <div class="grid-dark-btns">
+            <a href="#">Case Study</a>
+            <a href="#">Open Space</a>
+          </div>
+          <figcaption class="grid-dark-text">
+            The perfect place that helps you get work done in peace
+          </figcaption>
+          <p class="grid-by-dark-text">by Margret Robertson</p>
+        </article>
+        <article class="item item-30_3">
+          <figure>
+            <img src="./images/pic_8.jpeg" alt="" />
+          </figure>
+          <div class="grid-btns">
+            <a href="#">Case Study</a>
+            <a href="#">Open Space</a>
+          </div>
+          <figcaption class="grid-card-text">
+            The perfect place that helps you get work done in peace
+          </figcaption>
+          <p class="grid-by-text">by Margret Robertson</p>
+        </article>
+      </section>
+      <!-- Subscribe -->
+      <section class="subscribe-section">
+        <h3 role="text" class="subscribe-text">Subscribe to see what we are thinking</h3>
+        <form action="submit" class="subscribe-form">
+          <input type="text" for="email" class="input">
+          <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+      </section>
     </main>
-    <!-- Subscribe -->
-    <section></section>
 
+    <!-- Subscribe -->
     <footer>
       <section>
         <nav class="bottom-menu">
           <ul class="bottom-menu-items">
             <li class="bottom-menuitem"><a href="#">Home</a></li>
             <li class="bottom-menuitem"><a href="#">Feature</a></li>
-            <li class="bottom-menuitem"><a href="#">Style Guide</a></li>
+            <li class="bottom-menuitem"><a href="#">Style</a></li>
             <li class="bottom-menuitem"><a href="#">Contact</a></li>
             <li class="bottom-menuitem"><a href="#">Newsetter</a></li>
             <li class="bottom-menuitem"><a href="#">Demos</a></li>
-            <li class="bottom-menuitem"><a href="#">Get Theme</a></li>
+            <li class="bottom-menuitem"><a href="#">Theme</a></li>
           </ul>
         </nav>
       </section>
