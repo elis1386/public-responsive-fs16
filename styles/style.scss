@@ -414,7 +414,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, 5vw);
-  grid-gap: 1em;
+  grid-gap: 1.2em;
   @include tablet {
     margin: 2em;
     display: flex;
@@ -480,19 +480,19 @@ body {
   .item-30_1 {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 5;
+    grid-row-start: 6;
     grid-row-end: 10;
   }
   .item-30_2 {
     grid-column-start: 5;
     grid-column-end: 9;
-    grid-row-start: 5;
+    grid-row-start: 6;
     grid-row-end: 10;
   }
   .item-30_3 {
     grid-column-start: 9;
     grid-column-end: 13;
-    grid-row-start: 5;
+    grid-row-start: 6;
     grid-row-end: 10;
   }
 
