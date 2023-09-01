@@ -52,7 +52,7 @@ body {
   margin-top: 5em;
   margin-left: 4em;
   max-width: 1440px;
-  /* 4 IMG SIDE*/
+  /* 4 IMG SIDE */
 }
 @media screen and (max-width: 768px) {
   .first-screen-cards {
@@ -188,7 +188,7 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.first-screen-cards .image-box:hover {
+.first-screen-cards .image-box:hover img {
   transform: scale(1.03);
 }
 .first-screen-cards .bold-text {
@@ -228,22 +228,20 @@ body {
   margin-top: 2rem;
   border-radius: 2rem;
 }
-
-.opacity {
+.screen-cards .opacity {
   opacity: 0.6;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.opacity:hover {
+.screen-cards .opacity:hover {
   transform: scale(1.03);
 }
-
-.btns {
+.screen-cards .btns {
   position: absolute;
   top: 25%;
   left: 10%;
 }
-.btns a {
+.screen-cards .btns a {
   text-decoration: none;
   color: white;
   border: 1px solid #ebebeb;
@@ -253,14 +251,13 @@ body {
   font-family: "Corben", serif;
   font-size: 1.2rem;
 }
-.btns a:hover {
+.screen-cards .btns a:hover {
   background-color: #f9d681;
   color: #333351;
   border: none;
   transition: 1s ease;
 }
-
-.width-card-text {
+.screen-cards .width-card-text {
   font-size: 3.2em;
   position: absolute;
   top: 32%;
@@ -273,13 +270,12 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
-  .width-card-text {
+  .screen-cards .width-card-text {
     top: 35%;
     font-size: 2.8em;
   }
 }
-
-.add-text {
+.screen-cards .add-text {
   position: absolute;
   top: 60%;
   left: 10%;
@@ -288,8 +284,7 @@ body {
   line-height: 150%;
   color: white;
 }
-
-.by-text {
+.screen-cards .by-text {
   position: absolute;
   top: 75%;
   left: 10%;
@@ -298,11 +293,10 @@ body {
   line-height: 150%;
   color: white;
 }
-
-.yellow {
+.screen-cards .yellow {
   transition: transform 0.3s ease;
 }
-.yellow::before {
+.screen-cards .yellow::before {
   content: "";
   position: absolute;
   top: 5%;
@@ -314,16 +308,15 @@ body {
   opacity: 0.9;
   cursor: pointer;
 }
-.yellow:hover {
+.screen-cards .yellow:hover {
   transform: scale(1.03);
 }
-
-.dark-btns {
+.screen-cards .dark-btns {
   position: absolute;
   top: 25%;
   left: 10%;
 }
-.dark-btns a {
+.screen-cards .dark-btns a {
   text-decoration: none;
   color: #333351;
   border: 1px solid #333351;
@@ -333,14 +326,13 @@ body {
   font-family: "Corben", serif;
   font-size: 1.2rem;
 }
-.dark-btns a:hover {
+.screen-cards .dark-btns a:hover {
   background-color: #f9d681;
   color: #333351;
   border: none;
   transition: 1s ease;
 }
-
-.dark-text {
+.screen-cards .dark-text {
   font-size: 3.2em;
   position: absolute;
   top: 32%;
@@ -353,20 +345,18 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
-  .dark-text {
+  .screen-cards .dark-text {
     font-size: 2.4em;
   }
 }
-
-.line {
+.screen-cards .line {
   position: absolute;
   top: 58%;
   left: 10%;
   width: 3%;
   border: 1px solid #333351;
 }
-
-.dark-add-text {
+.screen-cards .dark-add-text {
   position: absolute;
   top: 62%;
   left: 10%;
@@ -376,12 +366,11 @@ body {
   color: #333351;
 }
 @media screen and (max-width: 768px) {
-  .dark-add-text {
+  .screen-cards .dark-add-text {
     font-size: 1em;
   }
 }
-
-.dark-by-text {
+.screen-cards .dark-by-text {
   position: absolute;
   top: 75%;
   left: 10%;
@@ -390,15 +379,14 @@ body {
   line-height: 150%;
   color: #333351;
 }
-
-.bellow-section-text {
+.screen-cards .bellow-section-text {
   font-size: "Muslish", serif;
   font-size: 1.2em;
   margin-top: 2em;
   text-align: center;
 }
 
-/*IMG-GRID SECTION  */
+/* IMG-GRID SECTION */
 .grid {
   max-width: 1240px;
   margin: 2em auto;
@@ -629,6 +617,36 @@ body {
   }
 }
 
+.type {
+  display: inline-flex;
+}
+
+.type span {
+  word-break: break-all;
+  height: 1.2em;
+  width: 0%;
+  overflow: hidden;
+  -webkit-animation: t 2s linear infinite alternate;
+          animation: t 2s linear infinite alternate;
+  font-size: 2em;
+}
+
+.type span:before {
+  content: " ";
+  display: inline-block;
+}
+
+@-webkit-keyframes t {
+  90%, 100% {
+    width: 100%;
+  }
+}
+
+@keyframes t {
+  90%, 100% {
+    width: 100%;
+  }
+}
 /* FOOTER */
 footer {
   display: flex;
