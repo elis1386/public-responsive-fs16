@@ -20,7 +20,7 @@
     <title>Maido</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" role="banner">
       <figure class="header-logo">
         <img
           src="https://maido-dark.fueko.net/content/images/2020/06/maido.svg"
@@ -36,7 +36,7 @@
           <li class="menuitem"><a href="#">Newsetter</a></li>
           <li class="menuitem"><a href="#">Demos</a></li>
           <li class="menuitem"><a href="#">Theme</a></li>
-          <i class="fas fa-search"></i>
+          <i class="fas fa-search" aria-label="Search"></i>
         </ul>
       </nav>
     </header>
@@ -225,9 +225,9 @@
         <h3 role="text" class="subscribe-text">
           Subscribe to see what we are thinking
         </h3>
-        <form action="submit" class="subscribe-form">
-          <span class="type"><span>Write here your email, please</span></span>
-          <input type="text" for="email" class="input" />
+        <span class="type"><span>write here your email, please</span></span>
+        <form action="#" class="subscribe-form">
+          <input type="email" id="email" class="input" placeholder="Enter your email"/>
           <button type="submit" class="btn-subscribe">Subscribe</button>
         </form>
       </section>
@@ -249,10 +249,10 @@
         </nav>
       </section>
       <section class="solial-media">
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </section>
     </footer>
   </body>

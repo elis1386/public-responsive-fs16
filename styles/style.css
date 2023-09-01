@@ -3,7 +3,6 @@ body {
   font-family: "Muslish", serif, "Corben", serif;
   color: white;
   margin: 2em auto;
-  max-width: 1440px;
 }
 
 /* HEADER */
@@ -12,7 +11,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  max-width: 1240px;
+  width: 90%;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -50,18 +49,19 @@ body {
 .first-screen-cards {
   display: flex;
   margin-top: 5em;
-  margin-left: 4em;
-  max-width: 1440px;
+  width: 100%;
   /* 4 IMG SIDE */
 }
 @media screen and (max-width: 768px) {
   .first-screen-cards {
     font-size: 0.6em;
+    margin-top: 5em;
   }
 }
 .first-screen-cards .left-side {
   width: 40%;
   position: relative;
+  margin-left: 0.8em;
 }
 .first-screen-cards .left-side img {
   width: 97%;
@@ -150,6 +150,7 @@ body {
 .first-screen-cards .card-box {
   width: 48%;
   position: relative;
+  margin-left: 0.5em;
 }
 .first-screen-cards .card-box:nth-child(1) .image-box::before {
   background-color: rgb(175, 234, 139);
@@ -172,7 +173,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 97%;
+  width: 100%;
   height: 220px;
   border-radius: 2em;
   background-color: rgb(214, 214, 214);
@@ -180,7 +181,7 @@ body {
   cursor: pointer;
 }
 .first-screen-cards .image-box img {
-  width: 97%;
+  width: 100%;
   height: 220px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -188,7 +189,7 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.first-screen-cards .image-box:hover img {
+.first-screen-cards .image-box:hover {
   transform: scale(1.03);
 }
 .first-screen-cards .bold-text {
@@ -209,18 +210,17 @@ body {
 /* SECOND SCREEN */
 .second-screen-cards {
   margin: auto;
-  max-width: 1240px;
+  width: 90%;
 }
 @media screen and (max-width: 768px) {
   .second-screen-cards {
     margin: 2em;
   }
 }
-
-.screen-cards {
+.second-screen-cards .screen-cards {
   position: relative;
 }
-.screen-cards img {
+.second-screen-cards .screen-cards img {
   height: 600px;
   width: 100%;
   -o-object-fit: cover;
@@ -228,20 +228,20 @@ body {
   margin-top: 2rem;
   border-radius: 2rem;
 }
-.screen-cards .opacity {
+.second-screen-cards .screen-cards .opacity {
   opacity: 0.6;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.screen-cards .opacity:hover {
+.second-screen-cards .screen-cards .opacity:hover {
   transform: scale(1.03);
 }
-.screen-cards .btns {
+.second-screen-cards .screen-cards .btns {
   position: absolute;
   top: 25%;
   left: 10%;
 }
-.screen-cards .btns a {
+.second-screen-cards .screen-cards .btns a {
   text-decoration: none;
   color: white;
   border: 1px solid #ebebeb;
@@ -251,13 +251,13 @@ body {
   font-family: "Corben", serif;
   font-size: 1.2rem;
 }
-.screen-cards .btns a:hover {
-  background-color: #f9d681;
+.second-screen-cards .screen-cards .btns a:hover {
+  background-color: rgb(214, 214, 214);
   color: #333351;
   border: none;
   transition: 1s ease;
 }
-.screen-cards .width-card-text {
+.second-screen-cards .screen-cards .width-card-text {
   font-size: 3.2em;
   position: absolute;
   top: 32%;
@@ -270,12 +270,12 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
-  .screen-cards .width-card-text {
+  .second-screen-cards .screen-cards .width-card-text {
     top: 35%;
     font-size: 2.8em;
   }
 }
-.screen-cards .add-text {
+.second-screen-cards .screen-cards .add-text {
   position: absolute;
   top: 60%;
   left: 10%;
@@ -284,7 +284,7 @@ body {
   line-height: 150%;
   color: white;
 }
-.screen-cards .by-text {
+.second-screen-cards .screen-cards .by-text {
   position: absolute;
   top: 75%;
   left: 10%;
@@ -293,10 +293,10 @@ body {
   line-height: 150%;
   color: white;
 }
-.screen-cards .yellow {
+.second-screen-cards .screen-cards .yellow {
   transition: transform 0.3s ease;
 }
-.screen-cards .yellow::before {
+.second-screen-cards .screen-cards .yellow::before {
   content: "";
   position: absolute;
   top: 5%;
@@ -308,15 +308,15 @@ body {
   opacity: 0.9;
   cursor: pointer;
 }
-.screen-cards .yellow:hover {
+.second-screen-cards .screen-cards .yellow:hover {
   transform: scale(1.03);
 }
-.screen-cards .dark-btns {
+.second-screen-cards .screen-cards .dark-btns {
   position: absolute;
   top: 25%;
   left: 10%;
 }
-.screen-cards .dark-btns a {
+.second-screen-cards .screen-cards .dark-btns a {
   text-decoration: none;
   color: #333351;
   border: 1px solid #333351;
@@ -326,13 +326,13 @@ body {
   font-family: "Corben", serif;
   font-size: 1.2rem;
 }
-.screen-cards .dark-btns a:hover {
-  background-color: #f9d681;
-  color: #333351;
+.second-screen-cards .screen-cards .dark-btns a:hover {
+  background-color: #333351;
+  color: white;
   border: none;
   transition: 1s ease;
 }
-.screen-cards .dark-text {
+.second-screen-cards .screen-cards .dark-text {
   font-size: 3.2em;
   position: absolute;
   top: 32%;
@@ -345,18 +345,18 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
-  .screen-cards .dark-text {
+  .second-screen-cards .screen-cards .dark-text {
     font-size: 2.4em;
   }
 }
-.screen-cards .line {
+.second-screen-cards .screen-cards .line {
   position: absolute;
   top: 58%;
   left: 10%;
   width: 3%;
   border: 1px solid #333351;
 }
-.screen-cards .dark-add-text {
+.second-screen-cards .screen-cards .dark-add-text {
   position: absolute;
   top: 62%;
   left: 10%;
@@ -366,11 +366,11 @@ body {
   color: #333351;
 }
 @media screen and (max-width: 768px) {
-  .screen-cards .dark-add-text {
+  .second-screen-cards .screen-cards .dark-add-text {
     font-size: 1em;
   }
 }
-.screen-cards .dark-by-text {
+.second-screen-cards .screen-cards .dark-by-text {
   position: absolute;
   top: 75%;
   left: 10%;
@@ -379,7 +379,7 @@ body {
   line-height: 150%;
   color: #333351;
 }
-.screen-cards .bellow-section-text {
+.second-screen-cards .bellow-section-text {
   font-size: "Muslish", serif;
   font-size: 1.2em;
   margin-top: 2em;
@@ -388,7 +388,7 @@ body {
 
 /* IMG-GRID SECTION */
 .grid {
-  max-width: 1240px;
+  width: 90%;
   margin: 2em auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -539,7 +539,7 @@ body {
   font-size: 1.2rem;
 }
 .grid .grid-dark-btns a:hover {
-  background-color: #252530;
+  background-color: #333351;
   color: white;
   border: none;
   transition: 1s ease;
@@ -576,7 +576,7 @@ body {
   align-items: center;
 }
 .subscribe-section .subscribe-text {
-  font-size: 3.4em;
+  font-size: 2.4em;
   box-sizing: border-box;
   width: 50%;
   text-align: center;
@@ -597,12 +597,14 @@ body {
   background-color: #252530;
   border-bottom: 1px solid rgb(172, 172, 172);
   width: 500px;
+  padding: 1em;
+  text-align: center;
 }
 .subscribe-section .subscribe-form .btn-subscribe {
   align-self: center;
   margin-top: 2em;
   border: none;
-  padding: 2.4em 2.4em;
+  padding: 1.6em 1.6em;
   text-align: center;
   box-sizing: content-box;
   border-radius: 1em;
@@ -610,6 +612,10 @@ body {
   color: white;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+.subscribe-section .subscribe-form .btn-subscribe:hover {
+  background-color: #f9d681;
+  color: #333351;
 }
 @media screen and (max-width: 768px) {
   .subscribe-section .subscribe-form .btn-subscribe {
@@ -628,7 +634,7 @@ body {
   overflow: hidden;
   -webkit-animation: t 2s linear infinite alternate;
           animation: t 2s linear infinite alternate;
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .type span:before {
@@ -653,7 +659,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  max-width: 1240px;
+  width: 90%;
   margin-top: 2em;
 }
 @media screen and (max-width: 768px) {
@@ -682,6 +688,9 @@ footer .bottom-menuitem a:hover {
 footer .solial-media {
   display: flex;
   gap: 1.2em;
+}
+footer .solial-media a {
+  color: white;
 }
 footer .fa-brands {
   font-size: 1.4em;
